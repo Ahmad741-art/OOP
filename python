@@ -1,0 +1,14 @@
+class Person:
+    def __init__(self, name, age):
+        self._age = age  # Encapsulated attribute
+
+class Car:
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
+
+    def drive(self):
+        print(f"The {self.make} {self.model} is driving.")
+
+my_car = Car("Toyota", "Corolla")
+my_car.drive()  # Output: The Toyota Corolla is driving.
